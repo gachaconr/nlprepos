@@ -1,2 +1,8 @@
-main codes for tensorflow in python
-sdfk;ng;skdfng;kdfsjnh;dfkshnfsk;hnskhnmfgh
+cableModel.py               - images model creation and saving
+cableModelTest.py           - recalling model and predict
+NLPinputsetting.py          - setting input/output based on sentences for nlp
+NLPinputsettingwithModel.py - setting input/output based on sentences for nlp with model
+micRecord2Text.py           - record microphone input and convert it into text 
+speechRecog.py              - .wav to text
+tokenSentencesExample.py    - checking token in sentences
+videoCapture.py             - video capture and video show
