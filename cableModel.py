@@ -38,3 +38,4 @@ model.summary()
 history = model.fit(train_generator, epochs=35)
 #model.save('cablemodel4.keras')
 
+print("done")
