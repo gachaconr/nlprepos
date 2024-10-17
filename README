@@ -6,3 +6,5 @@ micRecord2Text.py           - record microphone input and convert it into text
 speechRecog.py              - .wav to text
 tokenSentencesExample.py    - checking token in sentences
 videoCapture.py             - video capture and video show
+readtxt.py		    - code to read txt lines
+sentences.txt		    - commands for the nn to learn
