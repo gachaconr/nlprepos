@@ -1,0 +1,3 @@
+create a folder in main directory, called test1
+delete the file, called procimage
+move file textx from current folder, to one folder down
