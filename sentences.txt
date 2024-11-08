@@ -1,3 +1,4 @@
-create a folder in main directory, called test1
-delete the file, called procimage
-move file textx from current folder, to one folder down
+create a folder in main directory, called test1 mkdir test1
+delete the file, called procimage rm procimage
+move file textx from current folder, to one folder down mv textx ../textx
+set folder test in Desktop cd /home/gachaconr/Desktop/test
