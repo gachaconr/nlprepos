@@ -74,9 +74,9 @@ print(labels)
 print("y")
 print(ys)
 '''
-
+'''
 embedding_dim = 16
-model = tf.keras.models.Sequential([
+model = tf.keras.models.Sequential([ # MODEL NOT BEEN CREATED PROPERLY, BUG?
 	#tf.keras.layers.Embedding(10000, 16), #vocab_size, embedding_dim),
 	#tf.keras.layers.GlobalAveragePooling1D(),
 	#tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(embedding_dim, return_sequences=True)),
@@ -84,7 +84,7 @@ model = tf.keras.models.Sequential([
 	tf.keras.layers.Dense(24, activation='relu'), 
 	tf.keras.layers.Dense(1, activation='sigmoid')
 ])
-
+'''
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.summary()
 #history = model.fit(xs,ys, epochs=35)
