@@ -68,3 +68,16 @@ print(labels)
 print("y")
 print(ys)
 '''
+embedding_dim = 16
+model = tf.keras.models.Sequential([ 
+	tf.keras.layers.Embedding(len(word_index),16),#10000, 16),
+	#tf.keras.layers.GlobalAveragePooling1D(),
+	tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(embedding_dim, return_sequences=True)),
+	tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(embedding_dim)),
+	tf.keras.layers.Dense(24, activation='relu'), 
+	tf.keras.layers.Dense(1, activation='sigmoid')
+])
+
+model.build(input_shape=(None,16))
+model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
+model.summary()
